@@ -20,13 +20,22 @@ This action sets up a Terraspace environment for use in actions by:
 
 ## Prerequisites
 
-This action requires the `ruby/setup-ruby` action to be run before it. Here's an example:
+This action has the following prerequisites:
+
+- Homebrew: The `Homebrew/actions/setup-homebrew@master` action should be run before this action to set up Homebrew.
+- Ruby: The `ruby/setup-ruby@v1` action should be run before this action to install Ruby.
+
+Here's an example workflow that includes the required prerequisites:
+
 
 ```
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
+      
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+      
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
         with:
