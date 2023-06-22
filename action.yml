@@ -1,0 +1,15 @@
+name: 'Setup Terraspace'
+description: 'Sets up a Terraspace environment for use in actions'
+author: 'equilibri0'
+inputs:
+  tf_version:
+    description: 'The version of Terraform to install'
+    required: false
+    default: 'latest'
+  ts_project:
+    description: 'The path to the Terraspace project'
+    required: false
+    default: '.'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
