@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "main": "dist/index.js",
     "scripts": {
-        "build": "tsc",
+        "build": "npm run compile",
+        "compile": "tsc",
         "test": "jest",
         "pre-commit": "npm run build && git add dist"
     },
@@ -13,7 +14,7 @@
         "typescript": "^4.9.5"
     },
     "dependencies": {
-        "@actions/core": "^1.2.6",
+        "@actions/core": "^1.10.0",
         "@actions/exec": "^1.0.4"
     }
 }
