@@ -5,9 +5,6 @@ import * as fs from 'fs';
 
 async function run() {
   try {
-    // Install Homebrew
-    await exec.exec('bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"');
-
     // Install tfenv and Terraform
     await exec.exec('brew install tfenv');
 

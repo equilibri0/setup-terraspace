@@ -39,8 +39,6 @@ const fs = __importStar(require("fs"));
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-            // Install Homebrew
-            yield exec.exec('bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"');
             // Install tfenv and Terraform
             yield exec.exec('brew install tfenv');
             const tfVersion = core.getInput('tf_version') || 'latest';
