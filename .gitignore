@@ -1,0 +1,15 @@
+# Directories
+/node_modules/
+
+# macOS
+.DS_Store
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Build and package files
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
