@@ -2,7 +2,6 @@
 
 This action sets up a Terraspace environment for use in actions by:
 
-- Installing Homebrew
 - Installing tfenv and a specified version of Terraform
 - Changing the directory to the specified Terraspace project
 - Checking for the existence of a Gemfile
